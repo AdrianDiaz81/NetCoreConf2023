@@ -1,0 +1,13 @@
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.csproj.AssemblyReference.cache
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.AssemblyInfoInputs.cache
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.AssemblyInfo.cs
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.csproj.CoreCompileInputs.cache
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\bin\Debug\net7.0\Data\avengers.json
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\bin\Debug\net7.0\Avengers.Feature.deps.json
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\bin\Debug\net7.0\Avengers.Feature.dll
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\bin\Debug\net7.0\Avengers.Feature.pdb
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.dll
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\refint\Avengers.Feature.dll
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\Avengers.Feature.pdb
+C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Feature\obj\Debug\net7.0\ref\Avengers.Feature.dll

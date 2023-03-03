@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Avengers.Benchmark.AvengerBenchmark-20230303-101456</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2546/22H2/2022Update)
+11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK=7.0.102
+  [Host]     : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2 [AttachedDebugger]
+  DefaultJob : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>     Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>GrpcGetallMethod</td><td>88.07 ms</td><td>1.657 ms</td><td>1.701 ms</td>
+</tr><tr><td>GrpcGetByIdMethod</td><td>84.36 ms</td><td>0.706 ms</td><td>0.626 ms</td>
+</tr><tr><td>RestGetallMethod</td><td>124.98 ms</td><td>1.526 ms</td><td>1.427 ms</td>
+</tr><tr><td>RestGetByIdMethod</td><td>123.95 ms</td><td>1.572 ms</td><td>1.470 ms</td>
+</tr></tbody></table>
+</body>
+</html>

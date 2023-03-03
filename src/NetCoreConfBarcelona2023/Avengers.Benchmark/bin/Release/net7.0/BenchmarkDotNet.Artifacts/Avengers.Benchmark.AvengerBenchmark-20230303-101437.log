@@ -1,0 +1,405 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99
+// command took 1,6s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99
+// command took 12,83s and exited with 1
+// start dotnet  build -c Release --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99
+// command took 3,54s and exited with 0
+// ***** Done, took 00:00:18 (18.17 sec)   *****
+// Found 4 benchmarks:
+//   AvengerBenchmark.GrpcGetallMethod: DefaultJob
+//   AvengerBenchmark.GrpcGetByIdMethod: DefaultJob
+//   AvengerBenchmark.RestGetallMethod: DefaultJob
+//   AvengerBenchmark.RestGetByIdMethod: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: AvengerBenchmark.GrpcGetallMethod: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f8bbd19b-7f74-4de6-a64f-e810561b8a99.dll --anonymousPipes 1420 1564 --benchmarkName Avengers.Benchmark.AvengerBenchmark.GrpcGetallMethod --job Default --benchmarkId 0 in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 276600.00 ns, 276.6000 us/op
+WorkloadJitting  1: 1 op, 333245200.00 ns, 333.2452 ms/op
+
+WorkloadPilot    1: 2 op, 202171400.00 ns, 101.0857 ms/op
+WorkloadPilot    2: 3 op, 313146900.00 ns, 104.3823 ms/op
+WorkloadPilot    3: 4 op, 449485000.00 ns, 112.3713 ms/op
+WorkloadPilot    4: 5 op, 461823800.00 ns, 92.3648 ms/op
+WorkloadPilot    5: 6 op, 569803400.00 ns, 94.9672 ms/op
+
+WorkloadWarmup   1: 6 op, 586751900.00 ns, 97.7920 ms/op
+WorkloadWarmup   2: 6 op, 646983200.00 ns, 107.8305 ms/op
+WorkloadWarmup   3: 6 op, 605309300.00 ns, 100.8849 ms/op
+WorkloadWarmup   4: 6 op, 558831500.00 ns, 93.1386 ms/op
+WorkloadWarmup   5: 6 op, 541192600.00 ns, 90.1988 ms/op
+WorkloadWarmup   6: 6 op, 539746500.00 ns, 89.9578 ms/op
+WorkloadWarmup   7: 6 op, 541086400.00 ns, 90.1811 ms/op
+WorkloadWarmup   8: 6 op, 543367500.00 ns, 90.5613 ms/op
+WorkloadWarmup   9: 6 op, 531586300.00 ns, 88.5977 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 6 op, 547026000.00 ns, 91.1710 ms/op
+WorkloadActual   2: 6 op, 519973100.00 ns, 86.6622 ms/op
+WorkloadActual   3: 6 op, 520585500.00 ns, 86.7643 ms/op
+WorkloadActual   4: 6 op, 514261400.00 ns, 85.7102 ms/op
+WorkloadActual   5: 6 op, 533561600.00 ns, 88.9269 ms/op
+WorkloadActual   6: 6 op, 521327200.00 ns, 86.8879 ms/op
+WorkloadActual   7: 6 op, 524229300.00 ns, 87.3715 ms/op
+WorkloadActual   8: 6 op, 541754700.00 ns, 90.2925 ms/op
+WorkloadActual   9: 6 op, 525821700.00 ns, 87.6369 ms/op
+WorkloadActual  10: 6 op, 536183700.00 ns, 89.3640 ms/op
+WorkloadActual  11: 6 op, 544976700.00 ns, 90.8294 ms/op
+WorkloadActual  12: 6 op, 530808700.00 ns, 88.4681 ms/op
+WorkloadActual  13: 6 op, 528365600.00 ns, 88.0609 ms/op
+WorkloadActual  14: 6 op, 520197700.00 ns, 86.6996 ms/op
+WorkloadActual  15: 6 op, 511952300.00 ns, 85.3254 ms/op
+WorkloadActual  16: 6 op, 533876300.00 ns, 88.9794 ms/op
+WorkloadActual  17: 6 op, 528294000.00 ns, 88.0490 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 6 op, 547026000.00 ns, 91.1710 ms/op
+WorkloadResult   2: 6 op, 519973100.00 ns, 86.6622 ms/op
+WorkloadResult   3: 6 op, 520585500.00 ns, 86.7643 ms/op
+WorkloadResult   4: 6 op, 514261400.00 ns, 85.7102 ms/op
+WorkloadResult   5: 6 op, 533561600.00 ns, 88.9269 ms/op
+WorkloadResult   6: 6 op, 521327200.00 ns, 86.8879 ms/op
+WorkloadResult   7: 6 op, 524229300.00 ns, 87.3715 ms/op
+WorkloadResult   8: 6 op, 541754700.00 ns, 90.2925 ms/op
+WorkloadResult   9: 6 op, 525821700.00 ns, 87.6369 ms/op
+WorkloadResult  10: 6 op, 536183700.00 ns, 89.3640 ms/op
+WorkloadResult  11: 6 op, 544976700.00 ns, 90.8294 ms/op
+WorkloadResult  12: 6 op, 530808700.00 ns, 88.4681 ms/op
+WorkloadResult  13: 6 op, 528365600.00 ns, 88.0609 ms/op
+WorkloadResult  14: 6 op, 520197700.00 ns, 86.6996 ms/op
+WorkloadResult  15: 6 op, 511952300.00 ns, 85.3254 ms/op
+WorkloadResult  16: 6 op, 533876300.00 ns, 88.9794 ms/op
+WorkloadResult  17: 6 op, 528294000.00 ns, 88.0490 ms/op
+
+// AfterAll
+// Benchmark Process 30408 has exited with code 0.
+
+Mean = 88.071 ms, StdErr = 0.413 ms (0.47%), N = 17, StdDev = 1.701 ms
+Min = 85.325 ms, Q1 = 86.764 ms, Median = 88.049 ms, Q3 = 88.979 ms, Max = 91.171 ms
+IQR = 2.215 ms, LowerFence = 83.442 ms, UpperFence = 92.302 ms
+ConfidenceInterval = [86.414 ms; 89.727 ms] (CI 99.9%), Margin = 1.657 ms (1.88% of Mean)
+Skewness = 0.26, Kurtosis = 1.96, MValue = 2
+
+// ** Remained 3 (75,0 %) benchmark(s) to run. Estimated finish 2023-03-03 10:16 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: AvengerBenchmark.GrpcGetByIdMethod: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f8bbd19b-7f74-4de6-a64f-e810561b8a99.dll --anonymousPipes 1620 1616 --benchmarkName Avengers.Benchmark.AvengerBenchmark.GrpcGetByIdMethod --job Default --benchmarkId 1 in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 226700.00 ns, 226.7000 us/op
+WorkloadJitting  1: 1 op, 247513300.00 ns, 247.5133 ms/op
+
+WorkloadPilot    1: 2 op, 174554300.00 ns, 87.2772 ms/op
+WorkloadPilot    2: 3 op, 258880400.00 ns, 86.2935 ms/op
+WorkloadPilot    3: 4 op, 347655300.00 ns, 86.9138 ms/op
+WorkloadPilot    4: 5 op, 419803700.00 ns, 83.9607 ms/op
+WorkloadPilot    5: 6 op, 514406100.00 ns, 85.7344 ms/op
+
+WorkloadWarmup   1: 6 op, 503899000.00 ns, 83.9832 ms/op
+WorkloadWarmup   2: 6 op, 513713500.00 ns, 85.6189 ms/op
+WorkloadWarmup   3: 6 op, 535200300.00 ns, 89.2000 ms/op
+WorkloadWarmup   4: 6 op, 495472000.00 ns, 82.5787 ms/op
+WorkloadWarmup   5: 6 op, 508693800.00 ns, 84.7823 ms/op
+WorkloadWarmup   6: 6 op, 503480200.00 ns, 83.9134 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 6 op, 510258300.00 ns, 85.0431 ms/op
+WorkloadActual   2: 6 op, 514854400.00 ns, 85.8091 ms/op
+WorkloadActual   3: 6 op, 501165000.00 ns, 83.5275 ms/op
+WorkloadActual   4: 6 op, 506178300.00 ns, 84.3630 ms/op
+WorkloadActual   5: 6 op, 502830400.00 ns, 83.8051 ms/op
+WorkloadActual   6: 6 op, 510900600.00 ns, 85.1501 ms/op
+WorkloadActual   7: 6 op, 506703400.00 ns, 84.4506 ms/op
+WorkloadActual   8: 6 op, 502988500.00 ns, 83.8314 ms/op
+WorkloadActual   9: 6 op, 503368400.00 ns, 83.8947 ms/op
+WorkloadActual  10: 6 op, 507430700.00 ns, 84.5718 ms/op
+WorkloadActual  11: 6 op, 502841700.00 ns, 83.8069 ms/op
+WorkloadActual  12: 6 op, 505007000.00 ns, 84.1678 ms/op
+WorkloadActual  13: 6 op, 505828200.00 ns, 84.3047 ms/op
+WorkloadActual  14: 6 op, 506160800.00 ns, 84.3601 ms/op
+WorkloadActual  15: 6 op, 526183400.00 ns, 87.6972 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 6 op, 510258300.00 ns, 85.0431 ms/op
+WorkloadResult   2: 6 op, 514854400.00 ns, 85.8091 ms/op
+WorkloadResult   3: 6 op, 501165000.00 ns, 83.5275 ms/op
+WorkloadResult   4: 6 op, 506178300.00 ns, 84.3630 ms/op
+WorkloadResult   5: 6 op, 502830400.00 ns, 83.8051 ms/op
+WorkloadResult   6: 6 op, 510900600.00 ns, 85.1501 ms/op
+WorkloadResult   7: 6 op, 506703400.00 ns, 84.4506 ms/op
+WorkloadResult   8: 6 op, 502988500.00 ns, 83.8314 ms/op
+WorkloadResult   9: 6 op, 503368400.00 ns, 83.8947 ms/op
+WorkloadResult  10: 6 op, 507430700.00 ns, 84.5718 ms/op
+WorkloadResult  11: 6 op, 502841700.00 ns, 83.8069 ms/op
+WorkloadResult  12: 6 op, 505007000.00 ns, 84.1678 ms/op
+WorkloadResult  13: 6 op, 505828200.00 ns, 84.3047 ms/op
+WorkloadResult  14: 6 op, 506160800.00 ns, 84.3601 ms/op
+
+// AfterAll
+// Benchmark Process 15668 has exited with code 0.
+
+Mean = 84.363 ms, StdErr = 0.167 ms (0.20%), N = 14, StdDev = 0.626 ms
+Min = 83.528 ms, Q1 = 83.847 ms, Median = 84.332 ms, Q3 = 84.541 ms, Max = 85.809 ms
+IQR = 0.694 ms, LowerFence = 82.806 ms, UpperFence = 85.583 ms
+ConfidenceInterval = [83.658 ms; 85.069 ms] (CI 99.9%), Margin = 0.706 ms (0.84% of Mean)
+Skewness = 0.77, Kurtosis = 2.7, MValue = 2
+
+// ** Remained 2 (50,0 %) benchmark(s) to run. Estimated finish 2023-03-03 10:15 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: AvengerBenchmark.RestGetallMethod: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f8bbd19b-7f74-4de6-a64f-e810561b8a99.dll --anonymousPipes 1664 1660 --benchmarkName Avengers.Benchmark.AvengerBenchmark.RestGetallMethod --job Default --benchmarkId 2 in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 211400.00 ns, 211.4000 us/op
+WorkloadJitting  1: 1 op, 317397400.00 ns, 317.3974 ms/op
+
+WorkloadPilot    1: 2 op, 276148800.00 ns, 138.0744 ms/op
+WorkloadPilot    2: 3 op, 405164800.00 ns, 135.0549 ms/op
+WorkloadPilot    3: 4 op, 530881900.00 ns, 132.7205 ms/op
+
+WorkloadWarmup   1: 4 op, 514140600.00 ns, 128.5351 ms/op
+WorkloadWarmup   2: 4 op, 536986200.00 ns, 134.2466 ms/op
+WorkloadWarmup   3: 4 op, 509142500.00 ns, 127.2856 ms/op
+WorkloadWarmup   4: 4 op, 513298700.00 ns, 128.3247 ms/op
+WorkloadWarmup   5: 4 op, 594575100.00 ns, 148.6438 ms/op
+WorkloadWarmup   6: 4 op, 507036900.00 ns, 126.7592 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 4 op, 504663800.00 ns, 126.1659 ms/op
+WorkloadActual   2: 4 op, 512568200.00 ns, 128.1421 ms/op
+WorkloadActual   3: 4 op, 499063300.00 ns, 124.7658 ms/op
+WorkloadActual   4: 4 op, 497551100.00 ns, 124.3878 ms/op
+WorkloadActual   5: 4 op, 494268200.00 ns, 123.5670 ms/op
+WorkloadActual   6: 4 op, 505507700.00 ns, 126.3769 ms/op
+WorkloadActual   7: 4 op, 493291800.00 ns, 123.3230 ms/op
+WorkloadActual   8: 4 op, 495108800.00 ns, 123.7772 ms/op
+WorkloadActual   9: 4 op, 503209300.00 ns, 125.8023 ms/op
+WorkloadActual  10: 4 op, 495834800.00 ns, 123.9587 ms/op
+WorkloadActual  11: 4 op, 490510400.00 ns, 122.6276 ms/op
+WorkloadActual  12: 4 op, 500620000.00 ns, 125.1550 ms/op
+WorkloadActual  13: 4 op, 503347900.00 ns, 125.8370 ms/op
+WorkloadActual  14: 4 op, 500635800.00 ns, 125.1589 ms/op
+WorkloadActual  15: 4 op, 502830100.00 ns, 125.7075 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 4 op, 504663800.00 ns, 126.1659 ms/op
+WorkloadResult   2: 4 op, 512568200.00 ns, 128.1421 ms/op
+WorkloadResult   3: 4 op, 499063300.00 ns, 124.7658 ms/op
+WorkloadResult   4: 4 op, 497551100.00 ns, 124.3878 ms/op
+WorkloadResult   5: 4 op, 494268200.00 ns, 123.5670 ms/op
+WorkloadResult   6: 4 op, 505507700.00 ns, 126.3769 ms/op
+WorkloadResult   7: 4 op, 493291800.00 ns, 123.3230 ms/op
+WorkloadResult   8: 4 op, 495108800.00 ns, 123.7772 ms/op
+WorkloadResult   9: 4 op, 503209300.00 ns, 125.8023 ms/op
+WorkloadResult  10: 4 op, 495834800.00 ns, 123.9587 ms/op
+WorkloadResult  11: 4 op, 490510400.00 ns, 122.6276 ms/op
+WorkloadResult  12: 4 op, 500620000.00 ns, 125.1550 ms/op
+WorkloadResult  13: 4 op, 503347900.00 ns, 125.8370 ms/op
+WorkloadResult  14: 4 op, 500635800.00 ns, 125.1589 ms/op
+WorkloadResult  15: 4 op, 502830100.00 ns, 125.7075 ms/op
+
+// AfterAll
+// Benchmark Process 22972 has exited with code 0.
+
+Mean = 124.984 ms, StdErr = 0.369 ms (0.29%), N = 15, StdDev = 1.427 ms
+Min = 122.628 ms, Q1 = 123.868 ms, Median = 125.155 ms, Q3 = 125.820 ms, Max = 128.142 ms
+IQR = 1.952 ms, LowerFence = 120.940 ms, UpperFence = 128.747 ms
+ConfidenceInterval = [123.458 ms; 126.509 ms] (CI 99.9%), Margin = 1.526 ms (1.22% of Mean)
+Skewness = 0.32, Kurtosis = 2.45, MValue = 2
+
+// ** Remained 1 (25,0 %) benchmark(s) to run. Estimated finish 2023-03-03 10:15 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Alto rendimiento)
+// **************************
+// Benchmark: AvengerBenchmark.RestGetByIdMethod: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f8bbd19b-7f74-4de6-a64f-e810561b8a99.dll --anonymousPipes 1348 1096 --benchmarkName Avengers.Benchmark.AvengerBenchmark.RestGetByIdMethod --job Default --benchmarkId 3 in C:\NetcoreconfBarcelona2023\Sesion\src\NetCoreConfBarcelona2023\Avengers.Benchmark\bin\Release\net7.0\f8bbd19b-7f74-4de6-a64f-e810561b8a99\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 228500.00 ns, 228.5000 us/op
+WorkloadJitting  1: 1 op, 279885200.00 ns, 279.8852 ms/op
+
+WorkloadPilot    1: 2 op, 252789800.00 ns, 126.3949 ms/op
+WorkloadPilot    2: 3 op, 384820200.00 ns, 128.2734 ms/op
+WorkloadPilot    3: 4 op, 503252100.00 ns, 125.8130 ms/op
+
+WorkloadWarmup   1: 4 op, 498750600.00 ns, 124.6877 ms/op
+WorkloadWarmup   2: 4 op, 507927200.00 ns, 126.9818 ms/op
+WorkloadWarmup   3: 4 op, 502864700.00 ns, 125.7162 ms/op
+WorkloadWarmup   4: 4 op, 505394900.00 ns, 126.3487 ms/op
+WorkloadWarmup   5: 4 op, 515606400.00 ns, 128.9016 ms/op
+WorkloadWarmup   6: 4 op, 509870800.00 ns, 127.4677 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 4 op, 499375500.00 ns, 124.8439 ms/op
+WorkloadActual   2: 4 op, 491334500.00 ns, 122.8336 ms/op
+WorkloadActual   3: 4 op, 487517000.00 ns, 121.8792 ms/op
+WorkloadActual   4: 4 op, 490657600.00 ns, 122.6644 ms/op
+WorkloadActual   5: 4 op, 497940900.00 ns, 124.4852 ms/op
+WorkloadActual   6: 4 op, 505168200.00 ns, 126.2920 ms/op
+WorkloadActual   7: 4 op, 489724700.00 ns, 122.4312 ms/op
+WorkloadActual   8: 4 op, 499939800.00 ns, 124.9849 ms/op
+WorkloadActual   9: 4 op, 496473100.00 ns, 124.1183 ms/op
+WorkloadActual  10: 4 op, 495148300.00 ns, 123.7871 ms/op
+WorkloadActual  11: 4 op, 496280200.00 ns, 124.0700 ms/op
+WorkloadActual  12: 4 op, 508389000.00 ns, 127.0973 ms/op
+WorkloadActual  13: 4 op, 491872100.00 ns, 122.9680 ms/op
+WorkloadActual  14: 4 op, 497262000.00 ns, 124.3155 ms/op
+WorkloadActual  15: 4 op, 490075800.00 ns, 122.5190 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 4 op, 499375500.00 ns, 124.8439 ms/op
+WorkloadResult   2: 4 op, 491334500.00 ns, 122.8336 ms/op
+WorkloadResult   3: 4 op, 487517000.00 ns, 121.8792 ms/op
+WorkloadResult   4: 4 op, 490657600.00 ns, 122.6644 ms/op
+WorkloadResult   5: 4 op, 497940900.00 ns, 124.4852 ms/op
+WorkloadResult   6: 4 op, 505168200.00 ns, 126.2920 ms/op
+WorkloadResult   7: 4 op, 489724700.00 ns, 122.4312 ms/op
+WorkloadResult   8: 4 op, 499939800.00 ns, 124.9849 ms/op
+WorkloadResult   9: 4 op, 496473100.00 ns, 124.1183 ms/op
+WorkloadResult  10: 4 op, 495148300.00 ns, 123.7871 ms/op
+WorkloadResult  11: 4 op, 496280200.00 ns, 124.0700 ms/op
+WorkloadResult  12: 4 op, 508389000.00 ns, 127.0973 ms/op
+WorkloadResult  13: 4 op, 491872100.00 ns, 122.9680 ms/op
+WorkloadResult  14: 4 op, 497262000.00 ns, 124.3155 ms/op
+WorkloadResult  15: 4 op, 490075800.00 ns, 122.5190 ms/op
+
+// AfterAll
+// Benchmark Process 4148 has exited with code 0.
+
+Mean = 123.953 ms, StdErr = 0.380 ms (0.31%), N = 15, StdDev = 1.470 ms
+Min = 121.879 ms, Q1 = 122.749 ms, Median = 124.070 ms, Q3 = 124.665 ms, Max = 127.097 ms
+IQR = 1.916 ms, LowerFence = 119.876 ms, UpperFence = 127.538 ms
+ConfidenceInterval = [122.381 ms; 125.524 ms] (CI 99.9%), Margin = 1.572 ms (1.27% of Mean)
+Skewness = 0.55, Kurtosis = 2.33, MValue = 2
+
+// ** Remained 0 (0,0 %) benchmark(s) to run. Estimated finish 2023-03-03 10:15 (0h 0m from now) **
+Successfully reverted power plan (GUID: fb5220ff-7e1a-47aa-9a42-50ffbf45c673 FriendlyName: HP Optimized (Modern Standby)‎)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Avengers.Benchmark.AvengerBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\Avengers.Benchmark.AvengerBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\Avengers.Benchmark.AvengerBenchmark-report.html
+
+// * Detailed results *
+AvengerBenchmark.GrpcGetallMethod: DefaultJob
+Runtime = .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 88.071 ms, StdErr = 0.413 ms (0.47%), N = 17, StdDev = 1.701 ms
+Min = 85.325 ms, Q1 = 86.764 ms, Median = 88.049 ms, Q3 = 88.979 ms, Max = 91.171 ms
+IQR = 2.215 ms, LowerFence = 83.442 ms, UpperFence = 92.302 ms
+ConfidenceInterval = [86.414 ms; 89.727 ms] (CI 99.9%), Margin = 1.657 ms (1.88% of Mean)
+Skewness = 0.26, Kurtosis = 1.96, MValue = 2
+-------------------- Histogram --------------------
+[84.457 ms ; 86.488 ms) | @@
+[86.488 ms ; 89.805 ms) | @@@@@@@@@@@@
+[89.805 ms ; 91.639 ms) | @@@
+---------------------------------------------------
+
+AvengerBenchmark.GrpcGetByIdMethod: DefaultJob
+Runtime = .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 84.363 ms, StdErr = 0.167 ms (0.20%), N = 14, StdDev = 0.626 ms
+Min = 83.528 ms, Q1 = 83.847 ms, Median = 84.332 ms, Q3 = 84.541 ms, Max = 85.809 ms
+IQR = 0.694 ms, LowerFence = 82.806 ms, UpperFence = 85.583 ms
+ConfidenceInterval = [83.658 ms; 85.069 ms] (CI 99.9%), Margin = 0.706 ms (0.84% of Mean)
+Skewness = 0.77, Kurtosis = 2.7, MValue = 2
+-------------------- Histogram --------------------
+[83.287 ms ; 86.150 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+AvengerBenchmark.RestGetallMethod: DefaultJob
+Runtime = .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 124.984 ms, StdErr = 0.369 ms (0.29%), N = 15, StdDev = 1.427 ms
+Min = 122.628 ms, Q1 = 123.868 ms, Median = 125.155 ms, Q3 = 125.820 ms, Max = 128.142 ms
+IQR = 1.952 ms, LowerFence = 120.940 ms, UpperFence = 128.747 ms
+ConfidenceInterval = [123.458 ms; 126.509 ms] (CI 99.9%), Margin = 1.526 ms (1.22% of Mean)
+Skewness = 0.32, Kurtosis = 2.45, MValue = 2
+-------------------- Histogram --------------------
+[122.617 ms ; 128.902 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+AvengerBenchmark.RestGetByIdMethod: DefaultJob
+Runtime = .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 123.953 ms, StdErr = 0.380 ms (0.31%), N = 15, StdDev = 1.470 ms
+Min = 121.879 ms, Q1 = 122.749 ms, Median = 124.070 ms, Q3 = 124.665 ms, Max = 127.097 ms
+IQR = 1.916 ms, LowerFence = 119.876 ms, UpperFence = 127.538 ms
+ConfidenceInterval = [122.381 ms; 125.524 ms] (CI 99.9%), Margin = 1.572 ms (1.27% of Mean)
+Skewness = 0.55, Kurtosis = 2.33, MValue = 2
+-------------------- Histogram --------------------
+[121.097 ms ; 127.880 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2546/22H2/2022Update)
+11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK=7.0.102
+  [Host]     : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2 [AttachedDebugger]
+  DefaultJob : .NET 7.0.2 (7.0.222.60605), X64 RyuJIT AVX2
+
+
+|            Method |      Mean |    Error |   StdDev |
+|------------------ |----------:|---------:|---------:|
+|  GrpcGetallMethod |  88.07 ms | 1.657 ms | 1.701 ms |
+| GrpcGetByIdMethod |  84.36 ms | 0.706 ms | 0.626 ms |
+|  RestGetallMethod | 124.98 ms | 1.526 ms | 1.427 ms |
+| RestGetByIdMethod | 123.95 ms | 1.572 ms | 1.470 ms |
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Hints *
+Outliers
+  AvengerBenchmark.GrpcGetByIdMethod: Default -> 1 outlier  was  removed (87.70 ms)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:54 (54.55 sec), executed benchmarks: 4
+
+Global total time: 00:01:13 (73.05 sec), executed benchmarks: 4
+// * Artifacts cleanup *
